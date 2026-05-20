@@ -14,11 +14,12 @@
 
         <AppButton
           tag="a"
-          href="#contact"
+          href="https://t.me/ichera087"
+          target="_blank"
+          rel="noopener noreferrer"
           variant="primary"
           size="sm"
           class="desktop-cta"
-          @click.prevent="scrollToSection('#contact')"
         >
           Связаться
         </AppButton>
