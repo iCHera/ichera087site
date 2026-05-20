@@ -13,6 +13,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   app: {
     baseURL: '/ichera087site/',
+    buildAssetsDir: 'assets',
     head: {
       title: 'iCHera087', 
 
