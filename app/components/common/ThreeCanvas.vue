@@ -7,6 +7,8 @@ import { ref, onMounted, onUnmounted } from 'vue';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
+const config = useRuntimeConfig(); 
+
 const canvasContainer = ref<HTMLDivElement | null>(null);
 
 let renderer: THREE.WebGLRenderer;
@@ -31,9 +33,11 @@ function init() {
   renderer.setPixelRatio(window.devicePixelRatio);
   container.appendChild(renderer.domElement);
 
+  const modelUrl = config.app.baseURL + 'models/human_body.glb';
+
   const loader = new GLTFLoader();
   loader.load(
-    '/models/human_body.glb',
+    modelUrl,
     (glb) => {
       model = glb.scene;
 

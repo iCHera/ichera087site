@@ -15,7 +15,7 @@
           class="project-card"
         >
 
-        <img :src="project.image" :alt="project.title" class="card-image" />
+        <img :src="config.app.baseURL + project.image" :alt="project.title" class="card-image" />
 
           <div class="card-content">
             <h3 class="card-title">{{ project.title }}</h3>
@@ -31,6 +31,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+
+const config = useRuntimeConfig();
 
 interface Project {
   title: string;
@@ -49,43 +51,43 @@ const projects: Project[] = [
   {
     title: 'TopBoutique',
     description: 'Разработка интерфейса для мультибрендового магазина одежды. Реализация каталога, фильтров, сортировки и базовых пользовательских сценариев.',
-    image: '/screenSite/topboutique.png',
+    image: 'screenSite/topboutique.png',
     liveUrl: 'https://topboutique.by/',
   },
   {
     title: 'KIXBOX',
     description: 'Работа над фронтендом интернет-магазина streetwear-бренда. Оптимизация отображения каталога и загрузки изображений.',
-    image: '/screenSite/kixbox.png',
+    image: 'screenSite/kixbox.png',
     liveUrl: 'https://kixbox.ru/',
   },
   {
     title: 'Edem-Room',
     description: 'Frontend-разработка интернет-магазина женской одежды с упором на мобильную версию и удобную навигацию.',
-    image: '/screenSite/edem-room.png',
+    image: 'screenSite/edem-room.png',
     liveUrl: 'https://edem-room.ru/',
   },
   {
     title: 'LOVE REPUBLIC',
     description: 'Поддержка и доработка пользовательского интерфейса официального онлайн-магазина. Работа с каталогом, корзиной и личным кабинетом.',
-    image: '/screenSite/loverepublic.png',
+    image: 'screenSite/loverepublic.png',
     liveUrl: 'https://loverepublic.ru/',
   },
   {
     title: 'Ecosmart Studio',
     description: 'Разработка промо-сайта для фитнес-студии. Верстка страниц, анимации интерфейса и адаптация под мобильные устройства.',
-    image: '/screenSite/ecosmartstudio.png',
+    image: 'screenSite/ecosmartstudio.png',
     liveUrl: 'https://ecosmartstudio.ru/',
   },
   {
     title: 'Blue Shadow',
     description: 'Создание интернет-магазина польского бренда одежды. Реализация адаптивной верстки и многоязычного интерфейса.',
-    image: '/screenSite/blueshadow.png',
+    image: 'screenSite/blueshadow.png',
     liveUrl: 'https://blueshadow.pl/',
   },
   {
     title: 'Allma',
     description: 'Создание простого и быстрого сайта для креативного агентства. Статическая генерация страниц и минималистичный интерфейс.',
-    image: '/screenSite/allma.png',
+    image: 'screenSite/allma.png',
     liveUrl: 'https://allma.am/',
   },
 ];
