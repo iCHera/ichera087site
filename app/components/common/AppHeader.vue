@@ -57,7 +57,7 @@
           <a href="#about" class="mobile-nav-link" @click="closeMobileMenu" @click.prevent="scrollToSection('#about')">Обо мне</a>
           <a href="#stack" class="mobile-nav-link" @click="closeMobileMenu" @click.prevent="scrollToSection('#stack')">Стек</a>
           <a href="#projects" class="mobile-nav-link" @click="closeMobileMenu" @click.prevent="scrollToSection('#projects')">Проекты</a>
-          <a href="https://t.me/ichera087" target="_blank" rel="noopener noreferrer" class="mobile-nav-link">Связаться</a>
+          <a href="https://t.me/r3name" target="_blank" rel="noopener noreferrer" class="mobile-nav-link">Связаться</a>
         </nav>
       </div>
     </Transition>
