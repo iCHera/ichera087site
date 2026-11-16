@@ -14,7 +14,7 @@
 
         <AppButton
           tag="a"
-          href="https://t.me/ichera087"
+          href="https://t.me/r3name"
           target="_blank"
           rel="noopener noreferrer"
           variant="primary"
